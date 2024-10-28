@@ -1,0 +1,776 @@
+/* 
+    Author: Tamanna Anand
+    Date: 2024-10-27
+    
+    CSS Layout StyleSheet for Portfolio
+
+*/
+/* media query for Mobile */
+
+@media only screen and (max-width: 480px) {
+
+    footer {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Home page Layout */
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: none;
+        z-index: 2;
+    }
+
+    #navicon:hover+ul,
+    nav ul:hover {
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+    }
+
+
+
+    nav {
+        align-self: flex-start;
+        border: none;
+
+    }
+
+    #header-homepage-div {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        text-align: center;
+        height: 100%;
+    }
+
+    #profile-pic-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+    }
+
+    .profile-pic img {
+        width: 300px;
+    }
+
+
+    #hero-text h1 {
+        font-size: 90px;
+    }
+
+    #intro-paragraph {
+        display: none;
+    }
+
+    #about-me-section,
+    #about-me-section-div {
+        text-align: center;
+    }
+
+    #project-section h2 {
+        border: none;
+    }
+
+
+    .certificates-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Resume page layout */
+
+    #resume-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resume-paragraphs {
+        display: none;
+    }
+
+    /* Skills page lyaout */
+
+    #skill-page-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #header-for-skills-page,
+    #contact-page-header,
+    #goal-page-header {
+        display: flex;
+        width: 100%;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #non-tech {
+        padding: 10px;
+        text-align: start;
+    }
+
+    #tech {
+        width: 100%;
+        margin: auto;
+        text-align: start;
+        padding: 10px;
+    }
+
+    #tech h4 {
+        margin: 8px 0px;
+    }
+
+    .certificate-content p {
+        display: none;
+    }
+
+    .certificate-content {
+        text-align: start;
+    }
+
+    .certificate-content h4,
+    .certificate-content h5:first-of-type {
+        text-align: center;
+    }
+
+    .certificate-content h5:first-of-type {
+        padding-bottom: 15px;
+    }
+
+    .bar-container:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    .certificates-section {
+        margin-bottom: 10px;
+    }
+
+    /* contact page */
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .contact-info-section h3 {
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* media query for Tablet */
+
+@media only screen and (min-width: 481px) {
+    footer {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Home page Layout */
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    nav ul li {
+        margin: 0 15px;
+        display: inline-block;
+    }
+
+    #navicon {
+        display: none;
+    }
+
+
+    #header-homepage-div {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #profile-pic-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+    }
+
+    .profile-pic img {
+        width: 300px;
+    }
+
+
+    #hero-text h1 {
+        font-size: 90px;
+    }
+
+    #intro-paragraph {
+        display: none;
+    }
+
+    #about-me-section,
+    #about-me-section-div {
+        text-align: center;
+    }
+
+    #project-section h2 {
+        border: none;
+    }
+
+
+    .certificates-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Resume page layout */
+
+    #resume-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #resume-page-header {
+        text-align: center;
+    }
+
+
+
+    /* Skills page lyaout */
+
+    #skill-page-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+    #header-for-skills-page,
+    #contact-page-header,
+    #goal-page-header {
+        display: flex;
+        width: 100%;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #non-tech {
+        padding: 10px;
+        text-align: start;
+    }
+
+    #tech {
+        width: 100%;
+        margin: auto;
+        text-align: start;
+        padding: 10px;
+    }
+
+    #tech h4 {
+        margin: 8px 0px;
+    }
+
+    .certificate-content p {
+        display: none;
+    }
+
+    .certificate-content {
+        text-align: start;
+    }
+
+    .certificate-content h4,
+    .certificate-content h5:first-of-type {
+        text-align: center;
+    }
+
+    .certificate-content h5:first-of-type {
+        padding-bottom: 15px;
+    }
+
+    .bar-container:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    .certificates-section {
+        margin-bottom: 10px;
+    }
+
+    /* contact page */
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .contact-info-section h3 {
+        margin: 0;
+    }
+}
+
+/* media query for Desktop */
+
+@media only screen and (min-width: 769px) {
+
+    /* Layout Styles for HTML & Body */
+
+    html {
+        display: flex;
+        flex-direction: column;
+    }
+
+    html body {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+    }
+
+
+    /* Layout Styles for Nav Bar */
+
+    nav {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0px 20px;
+        position: sticky;
+        top: 0;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    nav ul li {
+        margin: 0 15px;
+        display: inline-block;
+    }
+
+    #navicon {
+        display: none;
+    }
+
+
+    /* Layout styles for Header on home page */
+
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #header-homepage-div {
+        height: 93vh;
+        width: 95% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 115px;
+    }
+
+
+    .col-lg-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .d-block {
+        width: 50%;
+        display: flex;
+        object-fit: contain;
+    }
+
+    .profile-pic img {
+        width: 380px;
+    }
+
+    #hero-text {
+        text-align: center;
+    }
+
+
+    /* Layout styles for about me section */
+
+    #about-me-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 50%;
+        gap: 10px;
+    }
+
+    #about-me-section h2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #about-me-section-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        gap: 10px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #intro-paragraph {
+        display: block;
+        border: 1px solid #6d2382;
+    }
+
+    #intro-paragraph h3 {
+        padding: 10px;
+    }
+
+    #cat-mom,
+    #outdoor-dabbler,
+    #personable-pal {
+        text-align: center;
+        display: inline-block;
+    }
+
+    /* Completed project section */
+    #project-info {
+        padding: 10px;
+        align-self: baseline;
+    }
+
+    #project-info-1 h5,
+    #project-info-1 h4 {
+        text-align: center;
+    }
+
+    #project-info-1,
+    #project-info-2 {
+        align-items: center;
+    }
+
+
+    #project-card-1,
+    #project-card-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* layout styles for resume section */
+
+    #resume-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #resume-page-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #text-header-resume {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        padding: 30px;
+    }
+
+    #intro-summary {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+    }
+
+
+
+    #section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+
+
+    /* skills page layout */
+
+    #skills-section {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 90% !important;
+        margin: auto;
+        justify-content: flex-start;
+
+    }
+
+    #skill-page-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    #non-tech {
+        text-align: center !important;
+    }
+
+    #non-tech,
+    #tech {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        text-align: start;
+        padding: 10px;
+    }
+
+
+    #non-tech h4,
+    #tech h4 {
+        padding: 10px 0px;
+    }
+
+    .certificates-section {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .certificate-card {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: 90%;
+        flex: 1;
+    }
+
+    .certificates-section-row {
+        display: flex;
+
+    }
+
+    .certificate-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .certificate-content p {
+        display: block;
+    }
+
+
+    /* goals page Layout */
+
+    #goal-page-header {
+        padding: 30px;
+    }
+
+    #goal-section {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #goals-year-1 {
+        display: flex;
+        align-items: center;
+    }
+
+    #goals-year-2 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .section-header {
+        flex: 1;
+    }
+
+    .section-text {
+        flex: 1;
+    }
+
+
+
+    /* contact page layout */
+
+    .container-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: 100%;
+    }
+
+    .contact-section {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+    }
+
+    .contact-info-section {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        padding-left: 60px;
+    }
+
+
+
+
+
+
+
+}

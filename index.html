@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 
+    HTML Home page for My Portfolio
+    Author: Tamanna Anand
+    Date: 2024-10-27
+    -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamanna's Portfolio</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="layout.css">
+  <!-- Link to Bootstrap styles via CDN, Bootstrap classes are used in this Portfolio -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="portfolio-font">
+  <nav>
+    <a id="navicon" href="#"><img src="icons8-menu-64.png" alt="menu"></a>
+    <ul>
+      <li><a class="btn btn-secondary rounded-pill px-3" href="index.html">Home</a></li>
+      <li><a class="btn btn-secondary rounded-pill px-3" href="resume.html">Resume</a></li>
+      <li><a class="btn btn-secondary rounded-pill px-3" href="skills.html">Skills</a></li>
+      <li><a class="btn btn-secondary rounded-pill px-3" href="goal.html">Goal</a></li>
+      <li><a class="btn btn-secondary rounded-pill px-3" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <!-- Bootstrap CSS classes added -->
+    <div id="header-homepage-div" class="poppins-black-italic">
+      <div id="profile-pic-section">
+        <div class="profile-pic rounded-circle">
+          <img src="undraw_profile_pic_re_iwgo.svg" alt="profile-pic">
+        </div>
+      </div>
+      <div id="hero-text" class="col-lg-6 rounded-4">
+        <h1><span>TAMANNA </span>ANAND</h1>
+        <h3 id="Scroll-down">Welcome to my portfolio! <a href="#Scroll-down"><img src="icons8-scroll-down-64.png"
+              alt="Scroll-down"></a></h3>
+      </div>
+    </div>
+  </header>
+  <section id="about-me-section">
+    <h2>About me</h2>
+    <h3 id="intro-paragraph">Hi there! I'm a passionate Full Stack Developer student focused on front-end and back-end
+      development at
+      NSCC. My background in inventory and operations has sharpened my problem-solving skills, which I find
+      essential in software development. I thrive in collaborative environments and am building a portfolio to
+      showcase my skills and real-world experiences. Excited for what’s ahead!</h3>
+    <div id="about-me-section-div">
+      <div id="cat-mom">
+        <img src="icons8-cat-64.png" class="rounded-square" alt="cat-icon">
+        <h3>Cat Mom</h3>
+        <p>As a proud cat mom, My and my partners life revolves around the playful furballs. From mischievous antics to
+          cozy snuggles,
+          every moment is an adventure. I love finding new toys and cozy spots for my cats, embracing all their quirky
+          behaviors along the way.</p>
+      </div>
+      <div id="outdoor-dabbler">
+        <img src="icons8-campfire-64.png" class="rounded-square" alt="tree-icon">
+        <h3>Outdoor Dabbler</h3>
+        <p>I enjoy exploring the great outdoors, even if I’m no expert. Whether it’s a leisurely hike or a picnic in the
+          park, I love soaking in nature's beauty. I might stumble
+          into a few surprises, but I’m always up for an
+          adventure and eager to learn!</p>
+      </div>
+      <div id="personable-pal">
+        <img src="icons8-helping-hand-64.png" class="rounded-square" alt="trust-icon">
+        <h3>Personable Pal</h3>
+        <p>I’m a personable pal dedicated to helping others. Whether it’s offering a listening ear or practical support,
+          friends know they can rely on me in tough times. I love uplifting those around me and being a positive force
+          in their lives.</p>
+      </div>
+    </div>
+  </section>
+  <section id="project-section">
+    <h2>Projects</h2>
+    <div class="certificates-section">
+      <div class="certificates-section-row">
+        <div id="project-card-1" class="certificate-card">
+          <div>
+            <img id="project-example-1" src="Acme-Pic.png" alt="certificate-img">
+          </div>
+          <div id="project-info-1" class="certificate-content">
+            <h4>Acme Adventure Travel</h4>
+            <h5>Responsive Adventure Travel Website</h5>
+          </div>
+        </div>
+        <div id="project-card-2" class="certificate-card">
+          <div>
+            <img id="project-example-2" src="battleship.png" alt="certificate-img">
+          </div>
+          <div id="project-info-2" class="certificate-content">
+            <h4>Battleship Game</h4>
+            <h5>Battleship Game written in Javascript</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>Tamanna Anand Portfolio 2024 <span> Icons by <a target="_blank" href="https://icons8.com">Icons8</a></span>
+  </footer>
+
+
+</body>
+
+</html>
