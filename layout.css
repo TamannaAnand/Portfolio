@@ -56,7 +56,7 @@
         flex-direction: column;
         width: 100% !important;
         text-align: center;
-        height: 100%;
+        height: 100vh;
     }
 
     #profile-pic-section {
@@ -72,7 +72,7 @@
 
 
     #hero-text h1 {
-        font-size: 90px;
+        font-size: 60px;
     }
 
     #intro-paragraph {
